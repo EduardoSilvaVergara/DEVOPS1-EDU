@@ -1,0 +1,15 @@
+#construir (servicio) pagina web
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+#docker compose up -d 
+#docker compose down 
+
+
