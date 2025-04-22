@@ -22,7 +22,7 @@ jobs:
                     mkdir -p /home/ubuntu/web-nueva
 
             - name: Sincronizar archivos con el servidor
-              uses: burnett01/rsync-deployments@v7.0.2
+              uses: burnett01/rsync-deployments@7.0.2
               with:
                 switches: "-avz --delete" #Opciones de rsync
                 path: "./" #Directorio de origen (Los archivos del repositorio)
